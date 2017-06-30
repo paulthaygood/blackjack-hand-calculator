@@ -1,4 +1,3 @@
-CURRENTLY DOING JAVASCRIPT PRACTICE WORK WITH GRAY.
 /*
    Implement a Blackjack hand value calculator.
 
@@ -11,11 +10,46 @@ CURRENTLY DOING JAVASCRIPT PRACTICE WORK WITH GRAY.
 */
 
 
-function handValue (hand) {
+function handValue(handArray){
+
+  var handTotal = 0;
+
+  //console.log(handArray);
+
+  for(var index = 0; index < handArray.length; index++) {
+
+    var card = handArray[index];
 
 
-  return;
+
+
+    if(card == "A") {
+
+      card == 11;
+
+    }
+    else if(card == "K" || card == "Q" || card == "J") {
+
+      card = 10;
+    }
+    else {
+    
+      card = parseInt(card);
+    }
+
+    handTotal = handTotal + card;
+
+  }
+
+  return handTotal;
 }
+
+console.log(handValue(["Q", "4", "K"]))
+
+
+
+
+
 
 
 /* -----  Hints ------
