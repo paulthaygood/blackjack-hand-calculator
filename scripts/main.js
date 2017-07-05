@@ -33,18 +33,15 @@ function handValue(handArray){
       card = 10;
     }
     else {
-    
+
       card = parseInt(card);
+      handTotal = handTotal + card;
     }
-
-    handTotal = handTotal + card;
-
   }
-
   return handTotal;
 }
 
-console.log(handValue(["Q", "4", "K"]))
+console.log(handValue(["Q", "1", "K"]))
 
 
 
